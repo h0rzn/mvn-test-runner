@@ -9,10 +9,6 @@ RUN apk add --no-cache maven
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-COPY checkout-pr.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/checkout-pr.sh
-
-
 WORKDIR /opt/project_source
 # RUN checkout-pr.sh
 
